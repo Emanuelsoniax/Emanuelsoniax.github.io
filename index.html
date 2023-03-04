@@ -1,1 +1,248 @@
-"Hello world"
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<!-- FontAwesome CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<!-- Bootstrap CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: 'Press Start 2P', cursive;
+		overflow-x: hidden;
+		background: black;
+	}
+	.menu{
+		position: fixed;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #fff;
+		width: 100%;
+		z-index: 1000;
+	}
+	.menu .logo-inline{
+    	width: 82px;
+	}
+	.menu a{
+		font-size: clamp(10px, 2vw, 18px);
+		padding 15px 5px;
+		color: #00000050;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	
+	.menu a:hover , 
+	.menu a.active
+	{
+		color: #333;
+	}
+	
+	section{
+		display: inline-block;
+		width: 100%;
+		height: 100vh;
+
+	}
+	
+	.sec::before{
+	 	content: '';
+		position: absolute;
+		bottom: 90vh;
+		width: 100%;
+		height: 18vh;
+		background: linear-gradient(to top, transparent 10%, black 50%,transparent 90%);
+		z-index: 1000;
+	}
+	.content .section:nth-child(1){
+		background-color: darkblue;
+	}
+	.sec .section:nth-child(1){
+		background-color: black;
+	}
+	.sec .section:nth-child(2){
+		background-color: teal;
+	}
+	section h1{
+		display: flex;
+		position: center;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 100vh;
+		font-size: clamp(48px, 8vw, 96px);
+		color: #FFFFFF;
+		pointer-events: none;
+	}
+	section h2{
+		top: clamp(64px, 8vw, 96px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 100vh;
+		font-size: clamp(16px, 4vw, 64px);
+		color: #FFFFFF;
+		pointer-events: none;
+	}	
+	#text{
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+	}
+	
+	parallax{
+		width: 100%;
+		height: 100vh;
+		padding: 100px;
+	}
+	
+	parallax img{
+		position: absolute;
+		top: 0;
+		left: 0; 
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		pointer-events: none;
+	}
+	parallax img#background{
+		z-index:6;
+	}
+	parallax img#middle{
+		z-index:8;
+	}
+	parallax img#foreground{
+		z-index:9;
+	}
+	.sec{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		z-index: 20;
+	}
+	
+	.social-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 60vh;
+ 		padding: 5px;
+		z-index: 22;
+	}
+	
+	.social-list aw {
+		color: teal;
+    	width: 64px;
+    	height: 64px;
+    	padding-top: 20px;
+    	display: inline-block;
+    	text-align: center;
+    	border-radius: 50%;
+    	transition: all 0.2s ease-in-out;
+    	background-color: white;
+		z-index:above;
+	}
+
+	.social-list aw:hover {
+    	color: color: #333;
+    	background-color: rgba(255, 255, 255, 0.8)
+    }	
+
+</style>
+</head>
+<body>
+	<?php
+		if(function_exists('the_custom_logo')){
+		$custom_logo_id = get_theme_mod('custom_logo');
+		$logo = wp_get_attachment_image_src($custom_logo_id);
+		}
+	?>
+	
+	<nav class="menu">
+		<img class="logo-inline" src="<?php echo $logo[0] ?>" alt="logo" >
+		<a href="#emanuelsonia" class="active">Emanuelsonia</a>
+		<a href="#projects">Projects</a>
+		<a href="#social">Social</a>
+	</nav>
+	<div class="content">
+		<section id="emanuelsonia" class="section"> 
+			<parallax>
+				<img src="http://emanuelsonia.nl/wp-content/uploads/2022/06/stars.png" id="background">
+				<img src="http://emanuelsonia.nl/wp-content/uploads/2022/06/mountains_behind.png" id="middle">
+				<h1 id="text">Emmie</h1>
+				<h2 id="text">
+					Game Developer
+				</h2>
+				<img src="http://emanuelsonia.nl/wp-content/uploads/2022/06/mountains_front.png" id = "foreground">	
+			</parallax>
+		</section>
+
+	</div>
+	<div class="sec">
+		<section id="projects" class="section"> 
+			<h1 id = "text">Projects</h1>
+			<h2 id="text">Coming soon</h2>
+		</section>
+		<section id="social" class="section"> 
+			<h1 id="text">Get in touch</h1>
+			<ul class="social-container social-list">
+				<li class="list-inline-item"><aw href="https://www.instagram.com/emmiedh__/"><i class="fab fa-instagram fa-lg"></i></aw></li>
+				<li class="list-inline-item"><aw href="https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/"><i class="fab fa-linkedin-in fa-lg"></i></aw></li>
+				<li class="list-inline-item"><aw href="https://github.com/Emanuelsoniax"><i class="fab fa-github fa-lg"></i></aw></li>
+				<li class="list-inline-item"><aw href="https://emanuelsonia.itch.io/"><i class="fab fa-itch-io fa-lg"></i></aw></li>
+				<li class="list-inline-item"><aw href="https://discord.com/users/691231204447354880"><i class="fab fa-discord fa-lg"></i></aw></li>
+			</ul>	
+		</section>
+	</div>
+	
+
+<!-- Jquery CDN Lingk -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	 $(function () {
+            $("a").click(function (e) {
+                e.preventDefault();
+                $("a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+	
+	$(function(){
+		$(".menu a").on('click', function(){
+			$("html, body").animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 1000); //500 = 0.5 seconds smoothness
+		});
+	});
+</script>	
+<script>
+	let background = document.getElementById('background');
+	let middle = document.getElementById('middle');
+	let text = document.getElementById('text');
+	let foreground = document.getElementById('foreground');
+	
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		background.style.top = value * 0.8 + 'px';
+		middle.style.top = value * 0.6 + 'px';
+		foreground.style.top = value * 0.25 + 'px';
+	})
+	
+</script>
+
+</body>
+</html>
