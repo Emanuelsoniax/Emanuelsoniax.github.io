@@ -132,7 +132,7 @@ parallax img#foreground{
     z-index: 22;
 }
 
-.social-list a {
+.social-list aw {
     color: teal;
     width: 64px;
     height: 64px;
@@ -145,7 +145,7 @@ parallax img#foreground{
     z-index:above;
 }
 
-.social-list a:hover {
+.social-list aw:hover {
     color: #333;
     background-color: rgba(255, 255, 255, 0.8)
 }
