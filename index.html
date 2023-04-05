@@ -42,19 +42,38 @@
 	</div>
 	<div class="sec">
 		<section id="projects" class="section"> 
-			<form>
-				<input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
-				<input type="radio" name="fancy" value="hearts" id="hearts" />
-				<input type="radio" name="fancy" value="spades" id="spades" />
-				<input type="radio" name="fancy" value="diamonds" id="diamonds" />			
-				<label for="clubs">Procedural Flowers</label>
-				<label for="hearts">Hearts</label>
-				<label for="spades">Spades</label>
-				<label for="diamonds"> Diamonds</label>
-		</form>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+				  <li data-target="#demo" data-slide-to="0" class="active"></li>
+				  <li data-target="#demo" data-slide-to="1"></li>
+				  <li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="Assets/desk.png">
+				  </div>
+				  <div class="carousel-item">
+					<img src="Assets/sky.png">
+				  </div>
+				  <div class="carousel-item">
+					<img src="Assets/wall.png">
+				  </div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				  <span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+				  <span class="carousel-control-next-icon"></span>
+				</a>
+			  </div>
 
 		</section>
-
 		<section id="social" class="section"> 
 			<h1 id="text">Get in touch</h1>
 			<ul class="social-container social-list">
