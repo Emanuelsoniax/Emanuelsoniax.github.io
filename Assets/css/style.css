@@ -263,6 +263,17 @@ label:after {
     object-fit: cover;
   }
 
+.carousel-inner aw{
+    color: teal;
+    width: 124px;
+    height: 64px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    z-index:above;
+}
+
   .carousel-item text{
     display: flex;
     justify-content: center;
