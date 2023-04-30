@@ -45,7 +45,7 @@ section{
 }
 
 .sec::before{
-     content: '';
+    content: '';
     position: absolute;
     bottom: 90vh;
     width: 100%;
@@ -53,6 +53,17 @@ section{
     background: linear-gradient(to top, transparent 10%, black 50%,transparent 90%);
     z-index: 1000;
 }
+
+.trd::before{
+    content: '';
+    position: absolute;
+    bottom: 90vh;
+    width: 100%;
+    height: 18vh;
+    background: linear-gradient(to top, transparent 10%, black 50%,transparent 90%);
+    z-index: 1000;
+}
+
 .content .section:nth-child(1){
     background-color: black;
 }
@@ -263,26 +274,45 @@ label:after {
     object-fit: cover;
   }
 
-.carousel-inner aw{
-    color: teal;
-    width: 124px;
-    height: 64px;
-    display: inline-block;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    background-color: white;
-    z-index:above;
-}
+  .carousel-item .overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+    top: 0;
+  }
 
-  .carousel-item text{
+.carousel-item text{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: clamp(5vw, 1vw, 10vw);
-    color: #fff;
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .carousel-item .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .carousel-item .btn:hover {
+    background-color: black;
+    color: white;
   }
