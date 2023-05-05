@@ -33,22 +33,52 @@
 	
 	<aside>
 		<img src="/Assets/ProceduralFlowers.png"></img>
-		<img src="/Assets/ProceduralFlowers.png"></img>
-		<img src="/Assets/ProceduralFlowers.png"></img>
-		<img src="/Assets/ProceduralFlowers.png"></img>
-		<img src="/Assets/ProceduralFlowers.png"></img>
+		<img src="/Assets/Flower_1.png"></img>
+		<img src="/Assets/Flower_2.png"></img>
+		<img src="/Assets/Flower_3.png"></img>
+		<img src="/Assets/Flower_4.png"></img>
 	</aside>
 
 	<section>
 		<h1>Introduction</h1>
-		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div>
+			To explore my fascination of procedural generation I’ve created a small tool to procedurally generate flowers in order to be able to create flowers from scratch. In order to realise this project I used Unity 2021.3.15 to visualise the scripts I wrote in C#. In it’s current form, this tool is executed in editor mode in Unity where you can adjust the different settings of the flower petals and the overall flower.
+		</div>
 	</section>
 	<section>
-		<h1>Content</h1>
-		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<h1>Flower Petals</h1>
+		<div>
+			To create the flower petals I studied the L-systems used in The Algorithmic Beauty of Plants to generate models of plant organs. There I encountered the following figure that, along with Vincent Taylor’s approach, inspired the way I shaped the flower petals. 		</div>
+		<img src="/Assets/ABOP.png"></img>
+		<div>	
+		 After studying the L-systems used I decided that instead of transcribing the L-system to work within C#, I would implement the steps in a similar, but for me more familiar way. 
+		</div>
+		<div>
+			In this approach I created nodes to represent the vertices needed to generate the shape. These nodes are then used to triangulate the shape to generate the mesh. By manipulating different settings, the distribution of the nodes can vary and result in different shapes of petals.
+		</div>
+		<img src="/Assets/Petals.PNG">
 	</section>
+    <section>
+    <h1>Flower Head</h1>
+	<div>
+		To distribute the flower petals on the flower head I’ve used Phyllotaxis, a mathematical phenomenon which is found in nature. 
+	</div>
+	<img src="/Assets/phyllotaxis.PNG">
+	<div>
+		Using this placement, the individual petals are then placed on the flower head and rotated to face inwards towards the center of the flower head. Using the settings of the flower head, the petals can be further rotated to create a blooming effect.	
+	</div>
+	<img src="/Assets/bloom.PNG">
+    </section>
 	<section>
-		<button> Github <aw href="https://github.com/Emanuelsoniax/" onclick="window.open('https://github.com/Emanuelsoniax/Procedural_Flowers', '_blank')"><i class="fab fa-github fa-lg"></i></aw></button>
+		<h1>Color</h1>
+		<div>
+			Finally I colored the flower petals using a gradient, which colors each individual petal a different color depending on it’s position on the flower head. 
+		</div>
+		<img src="/Assets/Flower_2.png">
+	</section>
+
+	<section>
+		<button> Github <aw href="https://github.com/Emanuelsoniax/Procedural_Flowers" onclick="window.open('https://github.com/Emanuelsoniax/Procedural_Flowers', '_blank')"><i class="fab fa-github fa-lg"></i></aw></button>
 	</section>
 </body>
 

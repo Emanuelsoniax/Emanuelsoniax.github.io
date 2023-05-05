@@ -79,6 +79,13 @@ section iframe{
     object-fit: contain;
 }
 
+section img{
+    width: 100%;
+    padding: 20px;
+    justify-content: left;
+    object-fit: contain; 
+}
+
 aside {
     float: right;
     margin: 0 1.5%;
