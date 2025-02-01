@@ -80,7 +80,6 @@ section .container{
     margin-right: 5%;
     max-width: 55%;
     height: auto;
-    background-color: red;
     z-index: 10;
 }
 
@@ -94,4 +93,33 @@ section .container text{
     font-family: Calibri;
     text-align: center;
     color: white;
+}
+
+section .container .project{
+    display:flex;
+    float: left;
+    text-align: left;
+    margin-top: 10%;
+    height: 200px;
+    width: 100%;
+}
+
+section .container .project:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+section .container .project:last-child{
+    margin-bottom: 10%;
+}
+
+section .container .project img{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+section .container .project h1{
+    display: inline-block;
+    position: relative;
+    height: auto;
 }
