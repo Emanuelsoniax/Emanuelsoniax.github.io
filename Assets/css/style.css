@@ -98,35 +98,92 @@ body{
     }
     
     section .container .project{
+        display: flex;    
         text-align: left;
         margin-top: 10%;
         height: auto;
         margin-left: 10%;
-        margin-right: 10%;
+        margin-right: 10%; 
+        margin-bottom: 10%;
+        
+        flex-direction: column-reverse;
+    }
+
+    section .container .project:hover{
+        cursor: pointer;
     }
     
     section .container .project:last-child{
         margin-bottom: 10%;
     }
-    
-    section .container .project img{
-        display: inline-block;
-        align: center;
-        object-fit: cover;
-        aspect-ratio: 57/65;
-        max-width: 100%;
-        height: auto;
+
+    section .container .project .sub{
+        diplay: flex;
+        flex-direction: column;
     }
     
+    
+    section .container .project .imagewrapper{
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        min-width: 40%;
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    section .container .project img{
+        aspect-ratio: 57/65;
+        width: 100%;
+    }
+
+      section .container .project .imagewrapper img:nth-child(2){
+        display: none;  
+    }
+
+    section .container .project:hover .imagewrapper img:first-child{
+        display: none; 
+    }
+    section .container .project:hover .imagewrapper img:nth-child(2){
+        display: inline-block; 
+    }
+
+    section .container .project .imagewrapper .cover{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 43/38;
+        height: auto;
+        width: 72%;
+        z-index: 20;
+        margin-left: 14.1%;
+        margin-top: -77.5%;
+    }
+
     section .container .project h1{
         position: relative;
         margin-top: 0%;
         font-size: clamp(15px, 1vw, 40px);
-        height: 2em;
-        margin-bottom: 1em;
+        height: auto;
         margin-top: 1em;
-        text-align: center;
+        text-align: left;
     }
+
+     section .container .project text{
+         height: auto;
+         width:100%;
+     }
+
+     section .container .project .btn{
+         display: block;
+         background-color: white;
+         position: relative;
+         width: 80%;
+         margin-top: 10%;
+         left: 10%;
+         right: 10%;
+     }
 }
 
 /* Desktop syle */
@@ -216,10 +273,15 @@ body{
     
     section .container .project{
         display:flex;
+        flex-direction: row;
         float: left;
         margin-top: 10%;
         height: auto;
         width: 100%;
+    }
+
+    section .container .project:hover{
+        cursor: pointer;
     }
     
     section .container .project:nth-child(odd){
@@ -230,28 +292,87 @@ body{
         margin-bottom: 10%;
     }
     
-    section .container .project img{
-        display: inline-block;
+    section .container .project .imagewrapper{
+        display: flex;
+        flex-direction: column;
         object-fit: cover;
-        aspect-ratio: 57/65;
-        max-width: 60%;
+        min-width: 40%;
         height: auto;
+        margin-bottom: 5%;
+    }
+    section .container .project img{
+        aspect-ratio: 57/65;
+        width: 100%;
+    }
+
+    section .container .project .imagewrapper img:nth-child(2){
+        display: none;  
+    }
+
+    section .container .project:hover .imagewrapper img:first-child{
+        display: none; 
+    }
+    section .container .project:hover .imagewrapper img:nth-child(2){
+        display: inline-block; 
+    }
+
+
+    section .container .project .imagewrapper .cover{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 43/38;
+        height: auto;
+        width: 72%;
+        z-index: 20;
+        margin-left: 14.1%;
+        margin-top: -77.5%;
+    }
+
+    section .container .project .sub{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-left: 1em;
     }
     
+    section .container .project .sub img{   
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 1em;
+        margin-top: 0;
+    }
+
+     section .container .project:nth-child(odd) .sub{
+        margin-right: 3em;
+        margin-left: 0;
+    }
+
     section .container .project h1{
         display: inline-block;
         position: relative;
         margin-top: 0%;
         font-size: clamp(15px, 1vw, 40px);
-        width: 100%;
+        width: auto;
         margin-bottom: 1em;
-        text-align: right;
+        text-align: center;
         margin-left: 1em;
         margin-right: 0;
     }
-    section .container .project:nth-child(odd) h1{
-        text-align: left;
-        margin-left: 0;
-        margin-right: 1em;
+
+    section .container .project text{
+         display: inline-block;
+         position: relative;    
+         margin-left: 10%;
+         margin-right: 10%;
+         height: auto;
+         width: auto;
+         text-align: center;
     }
+
+     section .container .project .btn{
+         display: none;
+     }
 }

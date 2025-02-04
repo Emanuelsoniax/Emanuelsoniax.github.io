@@ -44,21 +44,80 @@
         </section>
 		<section id="projects">
         <div class="container">
-            <h1>Projects :)</h1>
+            <h1>Projects</h1>
+
             <div class="project">
-            <img src=Assets\cardridge-blue.PNG></img>
-            <h1>People Corporation</h1>
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge.PNG>
+                    <img src=Assets\cardridge-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/mibo_2.png');")>
+                    </div>
+                </div>
+                <div class="sub">
+                <img src=Assets\mibotitlecard.png style="aspect-ratio: 9/2.5">
+                <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                </div>
             </div>
+
             <div class="project">
-            <img src=Assets\cardridge-green.PNG></img>
-            <h1>Procedural Flowers</h1>
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-purple.PNG>
+                    <img src=Assets\cardridge-purple-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/Lion_1.jpg');")>
+                    </div>
+                </div>
+                <div class="sub">
+                <img src=Assets\LionAerobics_Logo.png style="aspect-ratio: 6/2.4">
+                <text> Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.</text>
+            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                </div>
             </div>
+
             <div class="project">
-            <img src=Assets\cardridge-red.PNG></img>
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-green.PNG>
+                    <img src=Assets\cardridge-green-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/screen_4.png');")>
+                    </div>
+                </div>
+                <div class="sub">
+                <img src=Assets\peoplecorp.png style="aspect-ratio: 9/1">
+                <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                </div>
             </div>
+
             <div class="project">
-            <img src=Assets\cardridge-purple.PNG></img>
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-blue.PNG>
+                    <img src=Assets\cardridge-blue-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/catnip_1.png');")>
+                    </div>
+                </div>
+                <div class="sub">
+                <img src=Assets\slice1.png style="aspect-ratio: 5/1.5">
+                <text> FMorgana - Escape From Reality is a small VR experience in which the player has to choose between a fake utopia and the real dystopian world.
+                    <br> <br>This experience was made for Imagine Film Festival 2024.
+                </text>
+            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                </div>
             </div>
+
+            <div class="project" href="Subpages/locoloco.html" onclick="window.open('Subpages/locoloco.html')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-red.PNG>
+                    <img src=Assets\cardridge-red-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/screen_locoloco.png');")>
+                    </div>
+                </div>
+                <div class="sub">
+                <img src=Assets\logo.png style="aspect-ratio: 9/1.2">
+                <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                </div>
+            </div>
+
 
         </div>
         </section>
@@ -115,6 +174,14 @@
                     }
                 });
             }
+
+  function hover(element) {
+  element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+}
+
+  function unhover(element) {
+  element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+}
 </script>	
 
 </body>
