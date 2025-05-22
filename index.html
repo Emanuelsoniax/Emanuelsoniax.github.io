@@ -22,49 +22,65 @@
 
 
 <body>
-<div class="menu-background">
-    <div class="menu-container">
-	<div class="menu-item">
-		<a href="#home" class="active">Home</a>
-    </div>
-    <div class="menu-item">
-		<a href="#about">About</a>
-      </div>
-      <div class="menu-item">
-		<a href="#projects">Projects</a>
-      </div>
-      <div class="menu-item">
-		<a href="#social">Contact</a>
+
+    <div class="menu-background">
+        <div class="menu-container">
+            <div class="menu-item">
+                <a href="#home" class="active">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="#about">About</a>
+            </div>
+            <div class="menu-item">
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="menu-item">
+                <a href="#social">Contact</a>
+            </div>
         </div>
     </div>
- </div>
 
-	<!--Landing section-->
-		<section id="home">
-         <div class="container">
-            <h1>Hello there!</h1>
-         </div>
-        </section>
-        <section id="about">
-         <div class="container">
+    <!--Landing section-->
+    <section id="home" style = "background-image: url('Assets/wallpapers.png'); background-size: cover; background-position: top; align-self: stretch;">
+        <div class="container">
+            <h1>Hi, I'm Emmie!</h1>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
             <h1>About me</h1>
-         </div>
-        </section>
-		<section id="projects">
+        </div>
+    </section>
+    <section id="projects">
         <div class="container">
             <h1>Projects</h1>
+
+
+            <div class="project">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-red.PNG>
+                    <img src=Assets\cardridge-red-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/TinySurgeon_screen.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\titlecard.gif style="aspect-ratio: 9/2.5">
+                    <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                </div>
+            </div>
 
             <div class="project">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge.PNG>
                     <img src=Assets\cardridge-hover.PNG>
-                    <div class="cover" style="background-image: url('Assets/mibo_2.png');")>
+                    <div class="cover" style="background-image: url('Assets/mibo_2.png');" )>
                     </div>
                 </div>
                 <div class="sub">
-                <img src=Assets\mibotitlecard.png style="aspect-ratio: 9/2.5">
-                <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
-            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <img src=Assets\mibotitlecard.png style="aspect-ratio: 9/2.5">
+                    <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
@@ -72,13 +88,13 @@
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-purple.PNG>
                     <img src=Assets\cardridge-purple-hover.PNG>
-                    <div class="cover" style="background-image: url('Assets/Lion_1.jpg');")>
+                    <div class="cover" style="background-image: url('Assets/Lion_1.jpg');" )>
                     </div>
                 </div>
                 <div class="sub">
-                <img src=Assets\LionAerobics_Logo.png style="aspect-ratio: 6/2.4">
-                <text> Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.</text>
-            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                    <img src=Assets\LionAerobics_Logo.png style="aspect-ratio: 6/2.4">
+                    <text> Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.</text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
@@ -86,14 +102,16 @@
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-green.PNG>
                     <img src=Assets\cardridge-green-hover.PNG>
-                    <div class="cover" style="background-image: url('Assets/screen_4.png');")>
+                    <div class="cover" style="background-image: url('Assets/screen_4.png');" )>
                     </div>
                 </div>
                 <div class="sub">
-                <img src=Assets\peoplecorp.png style="aspect-ratio: 9/1">
-                <text> People Corporation is a Desk Simulation game from the perspective of an (evil) corporation. The goal of this game is to give the player insight on how these companies operate, manipulate the masses and pollute the environment.
-                <br>In this game, the player takes on the roll of a nameless employee whose reward system is directly linked to the largest polluting corporation in the world, People Corporation. </text>
-            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                    <img src=Assets\peoplecorp.png style="aspect-ratio: 9/1">
+                    <text>
+                        People Corporation is a Desk Simulation game from the perspective of an (evil) corporation. The goal of this game is to give the player insight on how these companies operate, manipulate the masses and pollute the environment.
+                        <br>In this game, the player takes on the roll of a nameless employee whose reward system is directly linked to the largest polluting corporation in the world, People Corporation.
+                    </text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
@@ -101,15 +119,16 @@
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-blue.PNG>
                     <img src=Assets\cardridge-blue-hover.PNG>
-                    <div class="cover" style="background-image: url('Assets/catnip_1.png');")>
+                    <div class="cover" style="background-image: url('Assets/catnip_1.png');" )>
                     </div>
                 </div>
                 <div class="sub">
-                <img src=Assets\slice1.png style="aspect-ratio: 5/1.5">
-                <text> FMorgana - Escape From Reality is a small VR experience in which the player has to choose between a fake utopia and the real dystopian world.
-                    <br> <br>This experience was made for Imagine Film Festival 2024.
-                </text>
-            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                    <img src=Assets\slice1.png style="aspect-ratio: 5/1.5">
+                    <text>
+                        FMorgana - Escape From Reality is a small VR experience in which the player has to choose between a fake utopia and the real dystopian world.
+                        <br> <br>This experience was made for Imagine Film Festival 2024.
+                    </text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
@@ -117,82 +136,84 @@
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-red.PNG>
                     <img src=Assets\cardridge-red-hover.PNG>
-                    <div class="cover" style="background-image: url('Assets/screen_locoloco.png');")>
+                    <div class="cover" style="background-image: url('Assets/screen_locoloco.png');" )>
                     </div>
                 </div>
                 <div class="sub">
-                <img src=Assets\logo.png style="aspect-ratio: 9/1.2">
-                <text> Loco Loco is a game where the player takes on the role of a railway manager who has to make sure the train arrives at its destination safely. 
-                <br>To achieve this, the player has to work a number of switches to guide the train in the right direction. </text>
-            <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>    
+                    <img src=Assets\logo.png style="aspect-ratio: 9/1.2">
+                    <text>
+                        Loco Loco is a game where the player takes on the role of a railway manager who has to make sure the train arrives at its destination safely.
+                        <br>To achieve this, the player has to work a number of switches to guide the train in the right direction.
+                    </text>
+                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
 
         </div>
-        </section>
-		<section id="social">
+    </section>
+    <section id="social">
         <div class="container">
             <h1>Hold space</h1>
             <text> My name is Emmie and I make games</text>
-        
-        </div>
-        </section>
-	
 
-<!-- Jquery CDN Lingk -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-	 $(function () {
+        </div>
+    </section>
+
+
+    <!-- Jquery CDN Lingk -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
             $("a").click(function (e) {
                 e.preventDefault();
                 $("a").removeClass("active");
                 $(this).addClass("active");
             });
         });
-	
-	$(function(){
-		$(".menu-item a").on('click', function(){
-			$("html, body").animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 1000); //500 = 0.5 seconds smoothness
-		});
-	});
 
-     $(window).scroll(function () {
-                onScrollHandle();
+        $(function () {
+            $(".menu-item a").on('click', function () {
+                $("html, body").animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 1000); //500 = 0.5 seconds smoothness
             });
+        });
 
-            function onScrollHandle() {
+        $(window).scroll(function () {
+            onScrollHandle();
+        });
 
-                //Get current scroll position
-                var currentScrollPos = $(document).scrollTop() +15 ;
+        function onScrollHandle() {
 
-                //Iterate through all node
-                $('.menu-item a').each(function () {
-                    var curLink = $(this);
-                    var refElem = $(curLink.attr('href'));
-                    //Compare the value of current position and the every section position in each scroll
-                    if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
-                        //Remove class active in all nav
-                        $('.menu-item a').removeClass("active");
-                        //Add class active
-                        curLink.addClass("active");
-                    }
-                    else {
-                        curLink.removeClass("active");
-                    }
-                });
-            }
+            //Get current scroll position
+            var currentScrollPos = $(document).scrollTop() + 15;
 
-  function hover(element) {
-  element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
-}
+            //Iterate through all node
+            $('.menu-item a').each(function () {
+                var curLink = $(this);
+                var refElem = $(curLink.attr('href'));
+                //Compare the value of current position and the every section position in each scroll
+                if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+                    //Remove class active in all nav
+                    $('.menu-item a').removeClass("active");
+                    //Add class active
+                    curLink.addClass("active");
+                }
+                else {
+                    curLink.removeClass("active");
+                }
+            });
+        }
 
-  function unhover(element) {
-  element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
-}
-</script>	
+        function hover(element) {
+            element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+        }
+
+        function unhover(element) {
+            element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+        }
+    </script>
 
 </body>
 </html>
