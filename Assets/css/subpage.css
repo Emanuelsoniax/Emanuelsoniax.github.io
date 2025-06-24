@@ -1,3 +1,7 @@
+
+@import url(https://emanuelsoniax.github.io/);
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,39 +12,29 @@ body{
     overflow-x: hidden;
     background-color: teal;
 }
-.menu{
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    z-index: 1000;
-}
-.menu .logo-inline{
-    width: 82px;
-}
-.menu a{
-    font-size: clamp(10px, 2vw, 18px);
-    padding: 15px 5px;
-    color: #00000050;
-    font-weight: 700;
-    text-decoration: none;
-}
 
-.menu a:hover , 
-.menu a.active
-{
-    color: #333;
-}
 .titlebar{
     background: white;
     width: 100%;
     padding-top: 100px;
     height: 30vh;   
+
+    align-items:center;
 }
 
-.title{
+
+    .titlebar .img {
+        display: block;
+        position: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+
+        height: 100%;
+    }
+
+.titlebar .title{
     display: flex;
     position: center;
     justify-content: center;

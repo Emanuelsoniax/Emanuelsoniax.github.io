@@ -41,20 +41,31 @@
     </div>
 
     <!--Landing section-->
-    <section id="home" style = "background-image: url('Assets/wallpapers.png'); background-size: cover; background-position: top; align-self: stretch;">
-        <div class="container">
-            <h1>Hi, I'm Emmie!</h1>
+    <section id="home" >
+        <div class="global-header"></div>
+            <div class="container">
+                <h1 style="padding-top: 35%;">I'm Emmie and I make games!</h1>
         </div>
     </section>
     <section id="about">
         <div class="container">
             <h1>About me</h1>
+            <text>I'm a all-round game developer with a passion for gameplay programming and technical design.
+                    As a game developer I like to create games that are not only fun to play, but also fun to make!
+            <br />
+                <br />While creating games I love to make prototypes to test my and other's on paper designs and see the ideas come alive. 
+                <br />I'm experienced in development with C# within Unity Engine, but I aspire to learn other engines to further my knowledge in game development.
+            <br />
+            <br /> Aside from game development I like to explore other disciplines like creating the art for solo projects or assisting others in a small team. And other forms of development/programming like creating this website!  
+            
+            
+            </text>
+            <img src=Assets\Profielfoto_Exposure.jpg style="display: block; max-width: 100%; max-height: 50%; padding-top: 10%; padding-bottom: 5%; " />
         </div>
     </section>
     <section id="projects">
         <div class="container">
             <h1>Projects</h1>
-
 
             <div class="project">
                 <div class="imagewrapper">
@@ -65,7 +76,8 @@
                 </div>
                 <div class="sub">
                     <img src=Assets\titlecard.gif style="aspect-ratio: 9/2.5">
-                    <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
+                    <text> Tiny Surgeon is my latest solo project!
+                    <br /> In Tiny Surgeon the player takes the role of a shrunken surgeon who explores a patient's digestive system.</text>
                     <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
@@ -98,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-green.PNG>
                     <img src=Assets\cardridge-green-hover.PNG>
@@ -115,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" >
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-blue.PNG>
                     <img src=Assets\cardridge-blue-hover.PNG>
@@ -140,19 +152,19 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img src=Assets\logo.png style="aspect-ratio: 9/1.2">
+                    <img src=Assets\logo.png style="aspect-ratio: 9/1.2" >
                     <text>
                         Loco Loco is a game where the player takes on the role of a railway manager who has to make sure the train arrives at its destination safely.
                         <br>To achieve this, the player has to work a number of switches to guide the train in the right direction.
                     </text>
-                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <button class="btn" href="Subpages/locoloco.html" onclick="window.open('Subpages/locoloco.html')"> learn more > </button>
                 </div>
             </div>
 
 
         </div>
     </section>
-    <section id="social">
+    <section id="social" style="min-height: 50vh">
         <div class="container">
             <h1>Hold space</h1>
             <text> My name is Emmie and I make games</text>
@@ -212,6 +224,22 @@
 
         function unhover(element) {
             element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+        }
+    </script>
+
+    <script>
+        //Array of images which you want to show: Use path you want.
+        var images = new Array('Assets/TinySurgeon_screen.png', 'Assets/catnip_1.png', 'Assets/screen2_locoloco.png', 'Assets/mibo_1.png');
+        var nextimage = 0;
+        doSlideshow();
+
+        function doSlideshow() {
+            if (nextimage >= images.length) { nextimage = 0; }
+            $('.global-header')
+                .css('background-image', 'url("' + images[nextimage++] + '")')
+                .fadeIn(4000, function () {
+                    setTimeout(doSlideshow, 5000);
+                });
         }
     </script>
 
