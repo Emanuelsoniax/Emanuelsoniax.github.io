@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Emmie den Hartog Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<!-- FontAwesome CSS-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<!-- Bootstrap CSS-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <title>Emmie den Hartog Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Emanuel_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<link rel= "stylesheet" href="Assets/css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Assets/css/style.css" type="text/css">
 </head>
 
 
@@ -47,27 +48,34 @@
                 <h1 style="padding-top: 35%;">I'm Emmie and I make games!</h1>
         </div>
     </section>
-    <section id="about">
+    <section id="about" style="min-height: 60vh">
         <div class="container">
             <h1>About me</h1>
-            <text>I'm a all-round game developer with a passion for gameplay programming and technical design.
-                    As a game developer I like to create games that are not only fun to play, but also fun to make!
+            <div class="project">
+
+            <text>
+                I'm a all-round game developer with a passion for gameplay programming and technical design.
+                    As a game developer I aim to create games that are not only fun to play, but also fun to make!
             <br />
                 <br />While creating games I love to make prototypes to test my and other's on paper designs and see the ideas come alive. 
                 <br />I'm experienced in development with C# within Unity Engine, but I aspire to learn other engines to further my knowledge in game development.
             <br />
             <br /> Aside from game development I like to explore other disciplines like creating the art for solo projects or assisting others in a small team. And other forms of development/programming like creating this website!  
-            
-            
+            <br />
+            <br />
             </text>
-            <img src=Assets\Profielfoto_Exposure.jpg style="display: block; max-width: 100%; max-height: 50%; padding-top: 10%; padding-bottom: 5%; " />
+                <div style="flex-direction: column; object-fit: cover;">
+            <img src=Assets\Profielfoto_Exposure.jpg style="max-width: 100%; max-height: auto; border-radius: 10%; aspect-ratio:1/1; " />
+
+                </div>
+            </div>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" >
         <div class="container">
             <h1>Projects</h1>
 
-            <div class="project">
+            <div class="project" href="https://emanuelsonia.itch.io/tiny-surgeon" onclick="window.open('https://emanuelsonia.itch.io/tiny-surgeon')">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-red.PNG>
                     <img src=Assets\cardridge-red-hover.PNG>
@@ -77,12 +85,15 @@
                 <div class="sub">
                     <img src=Assets\titlecard.gif style="aspect-ratio: 9/2.5">
                     <text> Tiny Surgeon is my latest solo project!
-                    <br /> In Tiny Surgeon the player takes the role of a shrunken surgeon who explores a patient's digestive system.</text>
-                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <br /> In Tiny Surgeon the player takes the role of a shrunken surgeon who explores a patient's digestive system.
+                    <br />
+                    <br /> During this project I got the chance to make a game by myself where I could test my art-, design-, development skills and most importantly my patience. 
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/tiny-surgeon" onclick="window.open('https://emanuelsonia.itch.io/tiny-surgeon')"> learn more > </button>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" href="https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies" onclick="window.open('https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies')">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge.PNG>
                     <img src=Assets\cardridge-hover.PNG>
@@ -91,8 +102,14 @@
                 </div>
                 <div class="sub">
                     <img src=Assets\mibotitlecard.png style="aspect-ratio: 9/2.5">
-                    <text> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </text>
-                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <text> Detective Mibo and The Flock of Lies is a narrative driven puzzle game where you as Detective Mibo try to solve a mystery surrounding a robbery.
+                    <br /> During your quest you meet various bird-like characters and solve small puzzles to find clues!
+                    <br />
+                    <br /> I worked on this project as Technical Game Designer by implementing player mechanics and the puzzles in the game, alongside writing the narrative.
+                        
+
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies" onclick="window.open('https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies')"> learn more > </button>
                 </div>
             </div>
 
@@ -105,12 +122,16 @@
                 </div>
                 <div class="sub">
                     <img src=Assets\LionAerobics_Logo.png style="aspect-ratio: 6/2.4">
-                    <text> Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.</text>
-                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <text> Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.
+                    <br />
+                    <br /> Within the team, I was responsible for gameplay programming and the colaborative design proces.
+                    
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/people-corporation" onclick="window.open('https://emanuelsonia.itch.io/people-corporation')"> learn more > </button>
                 </div>
             </div>
 
-            <div class="project" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')">
+            <div class="project" href="https://emanuelsonia.itch.io/people-corporation" onclick="window.open('https://emanuelsonia.itch.io/people-corporation')">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-green.PNG>
                     <img src=Assets\cardridge-green-hover.PNG>
@@ -122,8 +143,10 @@
                     <text>
                         People Corporation is a Desk Simulation game from the perspective of an (evil) corporation. The goal of this game is to give the player insight on how these companies operate, manipulate the masses and pollute the environment.
                         <br>In this game, the player takes on the roll of a nameless employee whose reward system is directly linked to the largest polluting corporation in the world, People Corporation.
+                        <br />
+                        <br />My role in this project was gameplay programming, system programming and the implementation of art and other features the game offers.
                     </text>
-                    <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
+                    <button class="btn" href="https://emanuelsonia.itch.io/people-corporation" onclick="window.open('https://emanuelsonia.itch.io/people-corporation')"> learn more > </button>
                 </div>
             </div>
 
@@ -139,12 +162,14 @@
                     <text>
                         FMorgana - Escape From Reality is a small VR experience in which the player has to choose between a fake utopia and the real dystopian world.
                         <br> <br>This experience was made for Imagine Film Festival 2024.
+                        <br /> 
+                        <br /> During development I focused on NPC navigation systems and audio implementation.
                     </text>
                     <button class="btn" href="Subpages/peoplecorporation.html" onclick="window.open('Subpages/peoplecorporation.html')"> learn more > </button>
                 </div>
             </div>
 
-            <div class="project" href="Subpages/locoloco.html" onclick="window.open('Subpages/locoloco.html')">
+            <div class="project" href="https://zaephus.itch.io/loco-loco" onclick="window.open('https://zaephus.itch.io/loco-loco')">
                 <div class="imagewrapper">
                     <img src=Assets\cardridge-red.PNG>
                     <img src=Assets\cardridge-red-hover.PNG>
@@ -156,18 +181,25 @@
                     <text>
                         Loco Loco is a game where the player takes on the role of a railway manager who has to make sure the train arrives at its destination safely.
                         <br>To achieve this, the player has to work a number of switches to guide the train in the right direction.
+                        <br />
+                        <br /> My role in this project was gameplay programming and creating the alternate controller used in playing the game, using Arduino.
                     </text>
-                    <button class="btn" href="Subpages/locoloco.html" onclick="window.open('Subpages/locoloco.html')"> learn more > </button>
+                    <button class="btn" href="https://zaephus.itch.io/loco-loco" onclick="window.open('https://zaephus.itch.io/loco-loco')"> learn more > </button>
                 </div>
             </div>
 
 
         </div>
     </section>
-    <section id="social" style="min-height: 50vh">
+    <section id="social" style="min-height: 80vh">
         <div class="container">
-            <h1>Hold space</h1>
-            <text> My name is Emmie and I make games</text>
+            <h1 id="text">Get in touch</h1>
+            <ul class="social-container social-list">
+                <li class="list-inline-item"><aw href="https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/" onclick="window.open('https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/', '_blank')"><i class="fab fa-linkedin-in fa-lg"></i></aw></li>
+                <li class="list-inline-item"><aw href="https://github.com/Emanuelsoniax/" onclick="window.open('https://www.github.com/Emanuelsoniax/', '_blank')"><i class="fab fa-github fa-lg"></i></aw></li>
+                <li class="list-inline-item"><aw href="https://emanuelsonia.itch.io/" onclick="window.open('https://emanuelsonia.itch.io/', '_blank')"><i class="fab fa-itch-io fa-lg"></i></aw></li>
+                <li class="list-inline-item"><aw href="https://discord.com/users/691231204447354880/" onclick="window.open('https://www.discord.com/users/691231204447354880/', '_blank')"><i class="fab fa-discord fa-lg"></i></aw></li>
+            </ul>
 
         </div>
     </section>

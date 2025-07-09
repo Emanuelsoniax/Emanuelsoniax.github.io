@@ -13,6 +13,28 @@ body{
     position: relative;
 }
 
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+    padding: 5px;
+    z-index: 22;
+}
+
+.social-list aw {
+    color: teal;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+}
+
 /* Style for mobile devices/small screens */
 @media (width <= 550px){
 
@@ -74,14 +96,15 @@ body{
     section:nth-child(odd){
         background-color: #1b1b1b;
     }
-    
-    section .container{
-        content: '';
-        margin-right: 10%;
-        margin-left: 10%;
-        height: auto;
-        z-index: 10;
-    }
+
+        section .container {
+            content: '';
+            margin-right: 10%;
+            margin-left: 10%;
+            height: auto;
+            z-index: 10;
+            align-items: center;
+        }
     
     section .container h1{
         text-align: center;
@@ -198,6 +221,8 @@ body{
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
+
+
 
 /* Desktop syle */
 @media (width > 550px){
