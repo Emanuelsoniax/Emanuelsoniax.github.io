@@ -1,167 +1,327 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Emmie den Hartog Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<!-- FontAwesome CSS-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<!-- Bootstrap CSS-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <title>Emmie den Hartog Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Emanuel_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<link rel= "stylesheet" href="Assets/css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Assets/css/style.css" type="text/css">
 </head>
+
+
 <body>
-	<nav class="menu">
-		<img class="logo-inline" src="Assets/Emanuel_logo.png" alt="logo" >
-		<a href="#emanuelsonia" class="active">Emmie den Hartog</a>
-		<a href="#projects">Projects</a>
-		<a href="#social">Contact</a>
-	</nav>
-	<!--Landing section-->
-	<div class="content">
-		<section id="emanuelsonia" class="section"> 
-			<parallax>
-				<img src="Assets/sky.png" id="background">
-				<img src="Assets/wall.png" id="middle">
-				<h1 id="text">Emmie</h1>
-				<h2 id="text">
-					Game Developer
-				</h2>
-				<img src="Assets/desk.png" id = "foreground">	
-			</parallax>
-		</section>
 
-	</div>
-	<div class="sec">
-		<!--Carousel section-->
-		<section id="projects" class="section"> 
-			<div id="demo" class="carousel slide" data-ride="carousel">
+    <div class="menu-background">
+        <div class="menu-container">
+            <div class="menu-item">
+                <a href="#home" class="active">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="#about">About</a>
+            </div>
+            <div class="menu-item">
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="menu-item">
+                <a href="#social">Contact</a>
+            </div>
+        </div>
+    </div>
 
-				<!-- Indicators -->
-				<ul class="carousel-indicators">
-				  <li data-target="#demo" data-slide-to="0" class="active"></li>
-				  <li data-target="#demo" data-slide-to="1"></li>
-				  <li data-target="#demo" data-slide-to="2"></li>
-				  <li data-target="#demo" data-slide-to="3"></li>
-				</ul>
-				
-				<!-- The slideshow -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="Assets/screen_locoloco.png">
-						<div class="overlay"></div>
-						<text class="text">Loco Loco</text>
-						<button class="btn" href="Subpages/locoloco.html"
-						onclick="window.open('Subpages/locoloco.html')"
-						> learn more ></button>
-					  </div>
-					<div class="carousel-item">
-						<img src="Assets/ProceduralFlowers.png">
-						<div class="overlay"></div>
-					  <text class="text">Procedural Flowers</text>
-					  <button class="btn" href="Subpages/prodecuralflowers.html"
-					  onclick="window.open('Subpages/prodecuralflowers.html')"
-					  >learn more ></button>
-				  </div>
-				  <div class="carousel-item">
-					<img src="Assets/CQuencer.png">
-					<div class="overlay"></div>
-					<text class="text">CQuencer</text>
-					<button class="btn" href="Subpages/cquencer.html"
-					onclick="window.open('Subpages/cquencer.html')"
-					> learn more ></button>
-				  </div>
-				  <div class="carousel-item">
-					<img src="Assets/Screen_2.PNG">
-					<div class="overlay"></div>
-					<text class="text">People Corporation</text>
-					<button class="btn" href="Subpages/peoplecorporation.html"
-					onclick="window.open('Subpages/peoplecorporation.html')"
-					> learn more ></button>
-				  </div>
-				</div>
-				
-				<!-- Left and right controls -->
-				<a class="carousel-control-prev" href="#demo" data-slide="prev">
-				  <span class="carousel-control-prev-icon"></span>
-				</a>
-				<a class="carousel-control-next" href="#demo" data-slide="next">
-				  <span class="carousel-control-next-icon"></span>
-				</a>
-			  </div>
+    <!--Landing section-->
+    <section id="home" >
+        <div class="global-header"></div>
+            <div class="container">
+                <h1 style="padding-top: 30vh;">I'm Emmie and I make games!</h1>
+        </div>
+    </section>
+    <section id="about" style="min-height: 60vh">
+        <div class="container">
+            <h1>About me</h1>
+            <div class="project">
 
-		</section>
-	</div>
-	<div class="sec">
-	<!--Socials section-->
-	<section id="social" class="section"> 
-		<h1 id="text">Get in touch</h1>
-		<ul class="social-container social-list">
-			<li class="list-inline-item"><aw href="https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/" onclick="window.open('https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/', '_blank')"><i class="fab fa-linkedin-in fa-lg"></i></aw></li>
-			<li class="list-inline-item"><aw href="https://github.com/Emanuelsoniax/" onclick="window.open('https://www.github.com/Emanuelsoniax/', '_blank')"><i class="fab fa-github fa-lg"></i></aw></li>
-			<li class="list-inline-item"><aw href="https://emanuelsonia.itch.io/" onclick="window.open('https://emanuelsonia.itch.io/', '_blank')"><i class="fab fa-itch-io fa-lg"></i></aw></li>
-			<li class="list-inline-item"><aw href="https://www.instagram.com/emmiedh__/" onclick="window.open('https://www.instagram.com/emmiedh__/', '_blank')"><i class="fab fa-instagram fa-lg"></i></aw></li>
-			<li class="list-inline-item"><aw href="https://discord.com/users/691231204447354880/" onclick="window.open('https://www.discord.com/users/691231204447354880/', '_blank')"><i class="fab fa-discord fa-lg"></i></aw></li>
-		</ul>	
-	</section>
-	</div>
-	
-	
+                <text>
+                    I'm a all-round game developer with a passion for gameplay programming and technical design.
+                    As a game developer I aim to create games that are not only fun to play, but also fun to make!
+                    <br />
+                    <br />While creating games I love to make prototypes to test my and other's on paper designs and see the ideas come alive.
+                    <br />I'm experienced in development with C# within Unity Engine, but I aspire to learn other engines to further my knowledge in game development.
+                    <br />
+                    <br /> Aside from game development I like to explore other disciplines like creating the art for solo projects or assisting others in a small team. And other forms of development/programming like creating this website!
+                    <br />
+                    <br /> 
+                   “I have never tried that before, so I think I should definitely be able to do that.”
+                </text>
+                <div style="flex-direction: column; object-fit: cover;">
+            <img src=Assets\Profielfoto_Exposure.jpg style="max-width: 100%; max-height: auto; border-radius: 10%; aspect-ratio:1/1; " />
 
-<!-- Jquery CDN Lingk -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-	 $(function () {
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" >
+        <div class="container">
+            <h1>Projects</h1>
+
+            <div class="project" href="https://emanuelsonia.itch.io/tiny-surgeon" onclick="window.open('https://emanuelsonia.itch.io/tiny-surgeon')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-red.PNG>
+                    <img src=Assets\cardridge-red-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/TinySurgeon_screen.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\titlecard.gif style="aspect-ratio: 9/2.5">
+                    <text>
+                        Tiny Surgeon is my latest solo project!
+                        <br /> In Tiny Surgeon the player takes the role of a shrunken surgeon who explores a patient's digestive system.
+                        <br />
+                        <br /> During this project I got the chance to make a game by myself where I could test my art-, design-, development skills and most importantly my patience.
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/tiny-surgeon" onclick="window.open('https://emanuelsonia.itch.io/tiny-surgeon')"> learn more > </button>
+                </div>
+            </div>
+
+            <div class="project" href="https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies" onclick="window.open('https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge.PNG>
+                    <img src=Assets\cardridge-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/mibo_2.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\mibotitlecard.png style="aspect-ratio: 9/2.5">
+                    <text>
+                        Detective Mibo and The Flock of Lies is a narrative driven puzzle game where you as Detective Mibo try to solve a mystery surrounding a robbery.
+                        <br /> During your quest you meet various bird-like characters and solve small puzzles to find clues!
+                        <br />
+                        <br /> I worked on this project as Technical Game Designer by implementing player mechanics and the puzzles in the game, alongside writing the narrative.
+
+
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies" onclick="window.open('https://emanuelsonia.itch.io/detective-mibo-and-the-flock-of-lies')"> learn more > </button>
+                </div>
+            </div>
+
+            <div class="project" href="https://emanuelsonia.itch.io/lion-aerobics?secret=Dx15oEe5JaXznbNniDh0px4Ytfk" onclick="window.open('https://emanuelsonia.itch.io/lion-aerobics?secret=Dx15oEe5JaXznbNniDh0px4Ytfk')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-purple.PNG>
+                    <img src=Assets\cardridge-purple-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/Lion_1.jpg');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\LionAerobics_Logo.png style="aspect-ratio: 6/2.4">
+                    <text>
+                        Lion Aerobics is an arcade game made for ING, where the player takes control over a lions body and has to match the pose as given by the aerobics instructor.
+                        <br />
+                        <br /> Within the team, I was responsible for gameplay programming and the colaborative design proces.
+
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/lion-aerobics?secret=Dx15oEe5JaXznbNniDh0px4Ytfk" onclick="window.open('https://emanuelsonia.itch.io/lion-aerobics?secret=Dx15oEe5JaXznbNniDh0px4Ytfk')"> learn more > </button>
+                </div>
+            </div>
+
+            <div class="project" href="https://emanuelsonia.itch.io/people-corporation" onclick="window.open('https://emanuelsonia.itch.io/people-corporation')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-green.PNG>
+                    <img src=Assets\cardridge-green-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/screen_4.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\peoplecorp.png style="aspect-ratio: 9/1">
+                    <text>
+                        People Corporation is a Desk Simulation game from the perspective of an (evil) corporation. The goal of this game is to give the player insight on how these companies operate, manipulate the masses and pollute the environment.
+                        <br>In this game, the player takes on the roll of a nameless employee whose reward system is directly linked to the largest polluting corporation in the world, People Corporation.
+                        <br />
+                        <br />My role in this project was gameplay programming, system programming and the implementation of art and other features the game offers.
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/people-corporation" onclick="window.open('https://emanuelsonia.itch.io/people-corporation')"> learn more > </button>
+                </div>
+            </div>
+
+            <div class="project" href="https://emanuelsonia.itch.io/fmorgana-escape-from-reality" onclick="window.open('https://emanuelsonia.itch.io/fmorgana-escape-from-reality')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-blue.PNG>
+                    <img src=Assets\cardridge-blue-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/catnip_1.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\slice1.png style="aspect-ratio: 5/1.5">
+                    <text>
+                        FMorgana - Escape From Reality is a small VR experience in which the player has to choose between a fake utopia and the real dystopian world.
+                        <br> <br>This experience was made for Imagine Film Festival 2024.
+                        <br />
+                        <br /> During development I focused on NPC navigation systems and audio implementation.
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/fmorgana-escape-from-reality" onclick="window.open('https://emanuelsonia.itch.io/fmorgana-escape-from-reality')"> learn more > </button>
+                </div>
+            </div>
+
+            <div class="project" style="padding-bottom: 10%;" href="https://zaephus.itch.io/loco-loco" onclick="window.open('https://zaephus.itch.io/loco-loco')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-red.PNG>
+                    <img src=Assets\cardridge-red-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/screen_locoloco.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <img src=Assets\logo.png style="aspect-ratio: 9/1.2">
+                    <text>
+                        Loco Loco is a game where the player takes on the role of a railway manager who has to make sure the train arrives at its destination safely.
+                        <br>To achieve this, the player has to work a number of switches to guide the train in the right direction.
+                        <br />
+                        <br /> My role in this project was gameplay programming and creating the alternate controller used in playing the game, using Arduino.
+                    </text>
+                    <button class="btn" href="https://zaephus.itch.io/loco-loco" onclick="window.open('https://zaephus.itch.io/loco-loco')"> learn more > </button>
+                </div>
+
+
+            </div>
+
+            <h1>Game Jams</h1>
+
+            <div class="project" style="padding-bottom: 10%;" href="https://emanuelsonia.itch.io/fairy-realms" onclick="window.open('https://emanuelsonia.itch.io/fairy-realms')">
+                <div class="imagewrapper">
+                    <img src=Assets\cardridge-purple.PNG>
+                    <img src=Assets\cardridge-purple-hover.PNG>
+                    <div class="cover" style="background-image: url('Assets/Fairy.png');" )>
+                    </div>
+                </div>
+                <div class="sub">
+                    <h1>Fairy Realms</h1>
+                    <text>
+                        Fairy Realms is a small platformer game where you play as a sorcerer which uses fairies to look into and teleport to other realms.
+                        <br />
+                        <br>This project was made during Cram Jam! 2023, where the challenge was to create a game within 24 hours.
+                        <br />
+                        <br /> This solo project brought back my love for simple and effective core mechanics that can shape your games!
+                    </text>
+                    <button class="btn" href="https://emanuelsonia.itch.io/fairy-realms" onclick="window.open('https://emanuelsonia.itch.io/fairy-realms')"> learn more > </button>
+                </div>
+                </div>
+
+                <div class="project" style="padding-bottom: 10%;" href="https://zaephus.itch.io/zomblympics" onclick="window.open('https://zaephus.itch.io/zomblympics')">
+                    <div class="imagewrapper">
+                        <img src=Assets\cardridge.PNG>
+                        <img src=Assets\cardridge-hover.PNG>
+                        <div class="cover" style="background-image: url('Assets/Itch_coverImage.png');" )>
+                        </div>
+                    </div>
+                    <div class="sub">
+                        <h1>Zombielympics</h1>
+                        <text>
+                            Enter the zombie olympics and excel at two olympics sport minigames!
+                            <br />
+                            <br />
+                            Made during Scream Dunk 2023.
+                            <br />
+                            <br /> During this project I made one of two minigames, Herdles. Besides programming I did some quick 2D art which let practice 2D rigging and animation.
+                        </text>
+                        <button class="btn" href="https://zaephus.itch.io/zomblympics" onclick="window.open('https://zaephus.itch.io/zomblympics')"> learn more > </button>
+                    </div>
+
+
+            </div>
+    </section>
+    <section id="social" style="min-height: 80vh">
+        <div class="container">
+            <h1 id="text">Get in touch</h1>
+            <ul class="social-container social-list">
+                <li class="list-inline-item"><button href="https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/" onclick="window.open('https://www.linkedin.com/in/emmie-den-hartog-40b0a7183/', '_blank')"><i class="fab fa-linkedin-in fa-lg" style="vertical-align:0;"></i></button></li>
+                <li class="list-inline-item"><button href="https://github.com/Emanuelsoniax/" onclick="window.open('https://www.github.com/Emanuelsoniax/', '_blank')"><i class="fab fa-github fa-lg" style="vertical-align:0;"></i></button></li>
+                <li class="list-inline-item"><button href="https://emanuelsonia.itch.io/" onclick="window.open('https://emanuelsonia.itch.io/', '_blank')"><i class="fab fa-itch-io fa-lg"  style="vertical-align:0;"></i></button></li>
+                <li class="list-inline-item"><button href="https://discord.com/users/691231204447354880/" onclick="window.open('https://www.discord.com/users/691231204447354880/', '_blank')"><i class="fab fa-discord fa-lg" style="vertical-align:0;"></i></button></li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Jquery CDN Lingk -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
             $("a").click(function (e) {
                 e.preventDefault();
                 $("a").removeClass("active");
                 $(this).addClass("active");
             });
         });
-	
-	$(function(){
-		$(".menu a").on('click', function(){
-			$("html, body").animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 1000); //500 = 0.5 seconds smoothness
-		});
-	});
-// Activate Carousel
-$("#myCarousel").carousel();
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-  $("#myCarousel").carousel(1);
-});
+        $(function () {
+            $(".menu-item a").on('click', function () {
+                $("html, body").animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 1000); //500 = 0.5 seconds smoothness
+            });
+        });
 
-// Enable Carousel Controls
-$(".left").click(function(){
-  $("#myCarousel").carousel("prev");
-});
-</script>	
-<script>
-	let background = document.getElementById('background');
-	let middle = document.getElementById('middle');
-	let text = document.getElementById('text');
-	let foreground = document.getElementById('foreground');
-	
-	window.addEventListener('scroll', function(){
-		let value = window.scrollY;
-		background.style.top = value * 0.8 + 'px';
-		middle.style.top = value * 0.6 + 'px';
-		foreground.style.top = value * 0.25 + 'px';
-	})
-	
-</script>
+        $(window).scroll(function () {
+            onScrollHandle();
+        });
+
+        function onScrollHandle() {
+
+            //Get current scroll position
+            var currentScrollPos = $(document).scrollTop() + 15;
+
+            //Iterate through all node
+            $('.menu-item a').each(function () {
+                var curLink = $(this);
+                var refElem = $(curLink.attr('href'));
+                //Compare the value of current position and the every section position in each scroll
+                if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+                    //Remove class active in all nav
+                    $('.menu-item a').removeClass("active");
+                    //Add class active
+                    curLink.addClass("active");
+                }
+                else {
+                    curLink.removeClass("active");
+                }
+            });
+        }
+
+        function hover(element) {
+            element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+        }
+
+        function unhover(element) {
+            element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+        }
+    </script>
+
+    <script>
+        //Array of images which you want to show: Use path you want.
+        var images = new Array('Assets/TinySurgeon_screen.png', 'Assets/catnip_1.png', 'Assets/screen2_locoloco.png', 'Assets/mibo_1.png');
+        var nextimage = 0;
+        doSlideshow();
+
+        function doSlideshow() {
+            if (nextimage >= images.length) { nextimage = 0; }
+            $('.global-header')
+                .css('background-image', 'url("' + images[nextimage++] + '")')
+                .fadeIn(4000, function () {
+                    setTimeout(doSlideshow, 5000);
+                });
+        }
+    </script>
 
 </body>
 </html>
